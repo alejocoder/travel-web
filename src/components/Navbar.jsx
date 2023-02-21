@@ -7,16 +7,16 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <nav className='NavbarItems'>
-        <h1 className='navbar-logo'>Trippy</h1>
+        <h1 className='navbar-logo'>Travely</h1>
 
         <div 
           onClick={() => setToggle(!toggle)}
           className='menu-icons'>
           <i 
-          className={toggle ? 'fas fa-times' : 'fas fa-bars' }></i>
+          className={!toggle ? 'fas fa-times' : 'fas fa-bars' }></i>
         </div>
 
-        <ul className='nav-menu'>
+        <ul className={toggle ? 'nav-menu' : 'nav-menu active'}>
           {MenuItems.map((item, index) => {
             return(
               <li key={index}>
