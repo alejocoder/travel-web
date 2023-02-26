@@ -59,7 +59,7 @@ img{
     color: black;
 }
 
-@media screen and (max-width: 898px) {
+@media screen and (max-width: 850px) {
     
     .hero-text h1 {
         padding: 10px 20px;
