@@ -2,6 +2,7 @@ import React from 'react'
 import { Destination } from '../components/Destination'
 import { Hero } from '../components/Hero'
 import { Navbar } from '../components/Navbar'
+import { Trip } from '../components/Trip'
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
         Url = '/'
       />
       <Destination/>
+      <Trip/>
     </>
   )
 }
